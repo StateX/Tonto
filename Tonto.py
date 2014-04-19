@@ -10,6 +10,25 @@ def trabajo(seleccion):
 	time.sleep(3)
 	os.system('"C:\Program Files\LibreOffice 4\program\soffice.exe"')
 	print "Necesitas algo mas? "
+	os.system('"C:\Users\Albert\Downloads\Jorge7.wav"')
+	print "[s = si] [n = no]"
+	d2 =  raw_input("-->:")
+	if d2 == "s":
+		os.system('cls')
+	elif d2 == "n":
+		os.system('cls')
+		print "que le vaya bien el dia señor"
+		os.system('"C:\Users\Albert\Downloads\Jorge1.wav"')
+		time.sleep(3)	
+		sys.exit(0)
+
+def musica(beethoven):
+	print "Accediendo a su carpeta de Musica"
+	os.system('"C:\Users\Albert\Downloads\Jorge6.wav"')
+	time.sleep(3)
+	os.system('"start C:\Users\Albert\Music"')
+	print "Necesitas algo mas? "
+	os.system('"C:\Users\Albert\Downloads\Jorge7.wav"')
 	print "[s = si] [n = no]"
 	d2 =  raw_input("-->:")
 	if d2 == "s":
@@ -24,8 +43,9 @@ def trabajo(seleccion):
 def who(Snifer):
 	print "Soy tu asistente personal para este pc, me has programado tu y actualmente me encuentro en la " + version
 	os.system('"C:\Users\Albert\Downloads\Jorge5.wav"')
-	time.sleep(3)
+	time.sleep(5)
 	print "Algo mas señor? "
+	os.system('"C:\Users\Albert\Downloads\Jorge8.wav"')
 	print "[s = si] [n = no]"
 	d2 =  raw_input("-->:")
 	if d2 == "s":
@@ -63,10 +83,14 @@ while True:
 	 d1 = raw_input("--> : ")
 	 if d1 == "a":
 		 print trabajo(d1)
+	 elif d1 == "c": 
+	 	 print musica(d1)	 
 	 elif d1 == "e":
 		 print who(d1)
 	 elif d1 == "f":
 	 	 print fin(d1)	
 	 else: 
-		 print "estamos trabajando en ello escoje otra opcion"	
+		 print "Aun no lo ha programado, señor"
+		 os.system('"C:\Users\Albert\Downloads\Jorge9.wav"')
+		 time.sleep(3)
 
