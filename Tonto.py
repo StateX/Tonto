@@ -1,4 +1,4 @@
-﻿#Esto es un invento un poco loco.
+#Esto es un invento un poco loco.
 #Esto es solo la base 
 import os
 import sys 
