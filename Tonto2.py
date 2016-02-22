@@ -1,56 +1,67 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 #Esto es un invento un poco loco.
 #En esta version vamos a ordenar un poco el codigo de Tonto. 
+
 
 import os
 import sys 
 import time
 from datetime import date 
 import re
+import pyttsx
 
-version = "0.0.1.3"
+version = "0.0.1.4"
 ideas = []
 
 #Ordenamos todas las frases que reproducira Tonto en una sola deficion
+def voz(frase): 
+	engine = pyttsx.init()
+	voices = engine.getProperty('voices')
+	engine.setProperty('voice', 'spanish')
+	engine.say(frase)
+	engine.runAndWait()
 
 def frases(numero): 
 	if numero == "1": 
-		print "Aun no lo ha programado, señor"
+		linea =  "Aun no lo ha programado."
 	elif numero == "2":
-		print "Accediendo a banco de trabajo"
+		linea =  "Accediendo a banco de trabajo"
 	elif numero == "3":
-		print "Necesitas algo mas? "
+		linea =  "Necesitas algo mas? "
 	elif numero == "4":
-		print "[s = si] [n = no]"
+		linea =  "[s = si] [n = no]"
 	elif numero == "5":
-		print "que le vaya bien el dia señor"
+		linea =  "que le vaya bien el dia"
 	elif numero == "6":
-		print "Se que no le gusta pero hoy ha de aguantarse"
+		linea =  "Se que no le gusta pero hoy ha de aguantarse"
 	elif numero == "7":
-		print "Abriendo carpeta de documentos, espero que usted sea ordenado señor"
+		linea =  "Abriendo carpeta de documentos, espero que usted sea ordenado "
 	elif numero == "8":
-		print "Accediendo a su carpeta de Musica"
+		linea =  "Accediendo a su carpeta de Musica"
 	elif numero == "9":
-		print "Abriendo repositorios"
+		linea =  "Abriendo repositorios"
 	elif numero == "10":
-		print "Accediendo a su editor de codigo favorito"
+		linea =  "Accediendo a su editor de codigo favorito"
 	elif numero == "11":
-		print "estas son las ideas que ha recogido hasta ahora."
+		linea =  "estas son las ideas que ha recogido hasta ahora."
 	elif numero == "12":
-		print "ideas guardadas con exito"
+		linea =  "ideas guardadas con exito"
 	elif numero == "13":
-		print "Algo mas señor? "
+		linea =  "Algo mas ? "
 	elif numero == "14":
-		print "selecione una de las dos señor"
+		linea =  "selecione una de las dos "
 	elif numero == "15": 
-		print "Iniciando Ragnarock Online, ya que tiene los juegos desordenados por el disco duro."
+		linea =  "Iniciando Ragnarock Online, ya que tiene los juegos desordenados por el disco duro."
 	elif numero == "16": 
-		print "Soy tu asistente personal para este pc, me has programado tu y actualmente me encuentro en la " + version
+		linea = "Soy tu asistente personal para este pc, me has programado tu y actualmente me encuentro en la " + version
 	elif numero == "17":
-		print "Siempre es un placer poder descansar"
+		linea =  "Siempre es un placer poder descansar"
 	elif numero == "18":
-		print "Hola Albert, que te apeteceria hacer hoy?" 
+		linea =  "Hola Albert, que te apeteceria hacer hoy?" 
 	elif numero == "19":
-		print"""
+		linea = """
 [trabajar] 
 [bah, tendre que estudiar]
 [Musica, Animame el dia] 
@@ -60,6 +71,8 @@ def frases(numero):
 [Quien eres?] 
 [No requiero tu ayuda, gracias]	
 """
+	print linea
+	voz(linea)
 
 #Lo mismo que hacemos con las frases pero con la voz reproducida 
 #def voz(diba):
