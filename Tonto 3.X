@@ -81,7 +81,7 @@ def frases(numero):
 #Lo mismo que hacemos con las frases pero con la voz reproducida 
 #def voz(diba):
 	#if diba = "numerodiba": 
-		#os.system('"RUTA DE LA CANCION A reproducira"')
+		#os.system(r'"RUTA DE LA CANCION A reproducira"')
 		#Aparte de os.system() tambien hay soluciones usando diferentes librerias. 
 
 
@@ -133,7 +133,7 @@ def trabajo(seleccion):
 	frases("2")
 	#voz(diba)
 	time.sleep(3)
-	os.system('"RUTA A TU EDITOR DE TEXTO FAVORITO"')
+	os.system(r'"RUTA A TU EDITOR DE TEXTO FAVORITO"')
 	frases("3")
 	#voz(diba)
 	frases("4")
@@ -156,7 +156,7 @@ def estudiar(Albert):
 	frases("7")
 	#voz(diba)
 	time.sleep(4)
-	os.system('"start RUTA CARPETA DOCUMENTOS"')
+	os.system(r'"start RUTA CARPETA DOCUMENTOS"')
 	time.sleep(3)
 	frases("3")
 	#voz(diba)
@@ -177,7 +177,7 @@ def musica(beethoven):
 	frases("8")
 	#voz(diba)
 	time.sleep(3)
-	os.system('"start cAPERTA MUSICA"')
+	os.system(r'"start cAPERTA MUSICA"')
 	frases("3")
 	#voz(diba)
 	frases("4")
@@ -196,11 +196,11 @@ def musica(beethoven):
 def programar(Wozniak):
 	 frases("9") 
 	 #voz(diba)
-	 os.system('"start CAPERTA REPOSITORIOS"')
+	 os.system(r'"start CAPERTA REPOSITORIOS"')
 	 time.sleep(3)
 	 frases("10") 
 	 #voz(diba)
-	 os.system('"RUTA EDITOR DE CODIGO"')
+	 os.system(r'"RUTA EDITOR DE CODIGO"')
 	 time.sleep(3)
 	 frases("3")
 	 #voz(diba)
@@ -269,7 +269,7 @@ def games(juegos):
 	 frases("15")
 	 #voz(diba)
 	 time.sleep(5)
-	 os.system('"RUTA A JUEGO O CAPERTA DE JUEGOS"')
+	 os.system(r'"RUTA A JUEGO O CAPERTA DE JUEGOS"')
 	 time.sleep(3)
 	 frases("13")
 	 #voz(diba)
